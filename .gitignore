@@ -1,0 +1,11 @@
+# Ignorar archivos de configuración de IDE
+.idea/
+
+# Laravel - ignorar dependencias y archivos generados
+**/vendor/
+**/node_modules/
+**/storage/
+**/storage/*.key
+**/public/hot
+**/.env
+**/.phpunit.result.cache
