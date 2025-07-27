@@ -50,7 +50,7 @@
                                             <tr class="align-middle">
                                                 <td>
                                                     <a href="{{route('usuarios.edit', $reg->id)}}" class="btn btn-warning btn-sm"> <i class="bi bi-pencil-fill"></i> </a>&nbsp;
-                                                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-eliminar-01">
+                                                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modal-eliminar-{{$reg->id}}">
                                                         <i class="bi bi-trash-fill"></i>
                                                     </button>
                                                 </td>
