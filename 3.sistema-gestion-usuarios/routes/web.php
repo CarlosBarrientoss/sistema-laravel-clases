@@ -9,3 +9,5 @@ Route::get('/', function () {
 });
 
 Route::resource('usuarios', UserController::class);
+
+Route::patch('usuarios/{usuario}/toggle', [UserController::class, 'toggleStatus'])->name('usuarios.toggle');
