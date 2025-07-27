@@ -1,0 +1,37 @@
+# ─── Logs y archivos temporales ────────────────────────────
+*.log
+Thumbs.db
+.DS_Store
+.phpunit.result.cache
+
+# ─── Variables de entorno y configuraciones sensibles ──────
+.env
+.env.backup
+.env.production
+auth.json
+
+# ─── Archivos de IDE y herramientas locales ────────────────
+.fleet/
+.idea/
+.vscode/
+.zed/
+.phpactor.json
+.phpunit.cache
+.nova/
+
+# ─── Laravel: carpetas compiladas o generadas ──────────────
+/vendor/
+/node_modules/
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/storage/app/*
+/storage/framework/*
+/storage/logs/*
+/bootstrap/cache/*
+
+# ─── Homestead ──────────────────────────────────────────────
+Homestead.json
+Homestead.yaml
