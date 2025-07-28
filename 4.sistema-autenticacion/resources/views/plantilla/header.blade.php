@@ -49,8 +49,11 @@
                     <!--begin::Menu Footer-->
                     <li class="user-footer">
                        <!-- <a href="#" class="btn btn-default btn-flat">Perfil</a> -->
-                        <a href="#" class="btn btn-default btn-flat float-end">Sign out</a>
+                        <a href="#" onclick="document.getElementById('logout-form').submit();" class="btn btn-default btn-flat float-end">Cerrar sesión</a>
                     </li>
+                    <form action="{{route('logout')}}" id="logout-form" method="post" class="d-none">
+                        @csrf
+                    </form>
                     <!--end::Menu Footer-->
                 </ul>
             </li>
