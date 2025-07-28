@@ -70,7 +70,13 @@
         </div>
         <div class="card-body login-card-body">
             <p class="login-box-msg">Ingrese sus credenciales</p>
-            <form action="../index3.html" method="post">
+            <form action="{{route('login.post')}}" method="post">
+                @if(session('error'))
+                    <div class="alert alert-danger">
+                        {{session('error')}}
+                    </div>
+                @endif
+                @csrf
                 <div class="input-group mb-1">
                     <div class="form-floating">
                         <input id="loginEmail" type="email" name="email" class="form-control" value="{{old('email')}}" placeholder="" />
