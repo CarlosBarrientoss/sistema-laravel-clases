@@ -11,3 +11,7 @@ Route::get('/', function () {
 Route::resource('usuarios', UserController::class);
 
 Route::patch('usuarios/{usuario}/toggle', [UserController::class, 'toggleStatus'])->name('usuarios.toggle');
+
+Route::get('login', function () {
+    return view('autenticacion.login');
+})->name('login');
